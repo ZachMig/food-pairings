@@ -1,5 +1,5 @@
 matches = ['esp.', 'e.g.', '+', 'season', 'taste', 'weight', 'volume', 'tips',
-           'botanical']
+           'botanical', 'Dishes']
 
 
 
