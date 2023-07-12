@@ -34,67 +34,62 @@ def remove_extra_spaces(file_path, output_file_path):
     print("Cleaned content has been written to", output_file_path)
 
 
-file_path = 'C:/Users/zmigliorini/fb_wdir/a.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/a_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/b.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/b_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/c.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/c_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/d.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/d_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/e.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/e_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/f.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/f_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/g.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/g_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/h.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/h_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/i.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/i_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/j.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/j_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/m.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/m_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/n.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/n_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/q.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/q_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/s.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/s_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/t.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/t_cleaned.html'
-remove_extra_spaces(file_path, output_file_path)
-
-
-
-
-
+##file_path = 'C:/Users/zmigliorini/fb_wdir/a.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/a_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/b.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/b_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/c.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/c_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/d.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/d_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/e.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/e_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/f.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/f_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/g.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/g_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/h.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/h_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/i.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/i_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/j.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/j_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/m.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/m_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/n.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/n_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/q.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/q_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/s.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/s_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/t.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/t_cleaned.html'
+##remove_extra_spaces(file_path, output_file_path)
