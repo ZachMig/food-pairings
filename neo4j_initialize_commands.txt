@@ -1,0 +1,20 @@
+//Create unique constraint and index on food names
+CREATE CONSTRAINT foodNameUniqueConstraint FOR (f:Food) REQUIRE f.name IS UNIQUE
+
+
+//Create food nodes
+LOAD CSV WITH HEADERS FROM "file:///test/foods_test.csv" as csvLine
+MERGE (:Food {name: csvLine.name})
+
+
+//Create relationships between foods
+:auto LOAD CSV WITH HEADERS FROM "file:///test/food_relationships_test.csv" AS csvLine
+
+CALL {
+ WITH csvLine
+ MATCH
+  (a:Food),
+  (b:Food)
+WHERE a.name = csvLine.foodA AND b.name = csvLine.foodB
+MERGE (a)-[:PAIRS_WITH]->(b)
+}
