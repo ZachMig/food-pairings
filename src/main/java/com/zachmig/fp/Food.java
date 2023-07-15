@@ -4,6 +4,7 @@ import org.springframework.data.neo4j.core.schema.Id;
 import org.springframework.data.neo4j.core.schema.Node;
 import org.springframework.data.neo4j.core.schema.Property;
 import org.springframework.data.neo4j.core.schema.Relationship;
+import org.springframework.data.neo4j.core.schema.Relationship.Direction;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -13,7 +14,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.data.neo4j.core.schema.GeneratedValue;
 
-@Node
+@Node("Food")
 public class Food {
 	
 	@Id
@@ -22,13 +23,11 @@ public class Food {
 	
 	private String name;
 	
-	//private Food() {}
-	
 	public Food(String name) {
 		this.name = name;
 	}
 	
-	@Relationship(type = "PAIRS_WITH")
+	@Relationship(type = "PAIRS_WITH", direction = Direction.OUTGOING)
 	public Set<Food> neighbors;
 	
 	
