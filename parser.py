@@ -29,11 +29,34 @@ def remove_extra_spaces(file_path, output_file_path):
             line = line.replace('h1l', 'lh1').replace('hl1', 'lh1')
 
             output_file.write(line)
-            
+
+
+
+matches_two = ['cuisine', 'cuisines']
+         
+def remove_some_text(file_path, output_file_path):
+    
+    with open(file_path, 'r', encoding='utf-8') as file:
+        lines = file.readlines()
+
+    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+        for line in lines:
+            if any([x in line for x in matches]):
+                continue
+            output_file.write(line)
+
 
     print("Cleaned content has been written to", output_file_path)
 
 
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+
+
+##########
 ##file_path = 'C:/Users/zmigliorini/fb_wdir/a.html'
 ##output_file_path = 'C:/Users/zmigliorini/fb_wdir/a_cleaned.html'
 ##remove_extra_spaces(file_path, output_file_path)
