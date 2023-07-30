@@ -41,7 +41,7 @@ def remove_some_text(file_path, output_file_path):
 
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
         for line in lines:
-            if any([x in line for x in matches]):
+            if any([x in line for x in matches_two]):
                 continue
             output_file.write(line)
 
@@ -50,9 +50,62 @@ def remove_some_text(file_path, output_file_path):
 
 
 
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
+#file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
+#output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
+#remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
 remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
+remove_some_text(file_path, output_file_path)
+
 
 
 
