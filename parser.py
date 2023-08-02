@@ -75,7 +75,7 @@ def expand_punc(file_path, output_file_path):
     
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
         for line in lines:
-            if 'cheese' in line and ':' in line:
+            if 'cheese:' in line:
                 newtokens = []
                 tokens = line.split(',')
                 for token in tokens:
@@ -84,7 +84,7 @@ def expand_punc(file_path, output_file_path):
                 print(newtokens)
                 for token in newtokens:
                     output_file.write(token)
-            else if 'vinegar:' in line:
+            elif 'vinegar:' in line:
                 newtokens = []
                 tokens = line.split(',')
                 for token in tokens:
@@ -93,7 +93,7 @@ def expand_punc(file_path, output_file_path):
                 print(newtokens)
                 for token in newtokens:
                     output_file.write(token)
-            else if 'oil:' in line:
+            elif 'oil:' in line:
                 newtokens = []
                 tokens = line.split(',')
                 for token in tokens:
@@ -102,7 +102,7 @@ def expand_punc(file_path, output_file_path):
                 print(newtokens)
                 for token in newtokens:
                     output_file.write(token)
-            else if 'chile peppers:' in line:
+            elif 'chile peppers:' in line:
                 newtokens = []
                 tokens = line.split(',')
                 for token in tokens:
@@ -111,7 +111,7 @@ def expand_punc(file_path, output_file_path):
                 print(newtokens)
                 for token in newtokens:
                     output_file.write(token)
-            else if 'pepper:' in line:
+            elif 'pepper:' in line:
                 newtokens = []
                 tokens = line.split(',')
                 for token in tokens:
@@ -120,7 +120,7 @@ def expand_punc(file_path, output_file_path):
                 print(newtokens)
                 for token in newtokens:
                     output_file.write(token)
-            else if 'wine:' in line:
+            elif 'wine:' in line:
                 newtokens = []
                 tokens = line.split(',')
                 for token in tokens:
@@ -129,12 +129,30 @@ def expand_punc(file_path, output_file_path):
                 print(newtokens)
                 for token in newtokens:
                     output_file.write(token)
-            else if 'beans:' in line:
+            elif 'beans:' in line:
                 newtokens = []
                 tokens = line.split(',')
                 for token in tokens:
                     token = token.replace('beans: ', '').strip()
                     newtokens.append(token + ' beans\n')
+                print(newtokens)
+                for token in newtokens:
+                    output_file.write(token)
+            elif 'stocks:' in line:
+                newtokens = []
+                tokens = line.split(',')
+                for token in tokens:
+                    token = token.replace('stocks: ', '').strip()
+                    newtokens.append(token + ' stock\n')
+                print(newtokens)
+                for token in newtokens:
+                    output_file.write(token)
+            elif 'sauce:' in line:
+                newtokens = []
+                tokens = line.split(',')
+                for token in tokens:
+                    token = token.replace('sauce: ', '').strip()
+                    newtokens.append(token + ' sauce\n')
                 print(newtokens)
                 for token in newtokens:
                     output_file.write(token)
@@ -146,10 +164,10 @@ def expand_punc(file_path, output_file_path):
 
 
 
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
 ##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
 ##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
 ##expand_punc(file_path, output_file_path)
@@ -198,6 +216,6 @@ expand_punc(file_path, output_file_path)
 ##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
 ##expand_punc(file_path, output_file_path)
 ##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
+expand_punc(file_path, output_file_path)
