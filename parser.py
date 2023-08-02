@@ -67,59 +67,101 @@ def remove_tags(file_path, output_file_path):
     print("Cleaned content has been written to", output_file_path)
 
 
+def expand_punc(file_path, output_file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        lines = file.readlines()
+    
+        
+    
+    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+        for line in lines:
+            if 'cheese' in line and ':' in line:
+                newtokens = []
+                tokens = line.split(',')
+                for token in tokens:
+                    token = token.replace('cheese: ', '').strip()
+                    newtokens.append(token + ' cheese\n')
+                print(newtokens)
+                for token in newtokens:
+                    output_file.write(token)
+            else if 'vinegar:' in line:
+                newtokens = []
+                tokens = line.split(',')
+                for token in tokens:
+                    token = token.replace('vinegar: ', '').strip()
+                    newtokens.append(token + ' vinegar\n')
+                print(newtokens)
+                for token in newtokens:
+                    output_file.write(token)
+            else if 'oil:' in line:
+                newtokens = []
+                tokens = line.split(',')
+                for token in tokens:
+                    token = token.replace('oil: ', '').strip()
+                    newtokens.append(token + ' oil\n')
+                print(newtokens)
+                for token in newtokens:
+                    output_file.write(token)
+            else:
+                output_file.write(line)
+
+    print("Cleaned content has been written to", output_file_path)
+    
+
+
 
 file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
 output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
-remove_tags(file_path, output_file_path)
+expand_punc(file_path, output_file_path)
 
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
-remove_tags(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
-remove_tags(file_path, output_file_path)
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
