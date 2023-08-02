@@ -102,6 +102,42 @@ def expand_punc(file_path, output_file_path):
                 print(newtokens)
                 for token in newtokens:
                     output_file.write(token)
+            else if 'chile peppers:' in line:
+                newtokens = []
+                tokens = line.split(',')
+                for token in tokens:
+                    token = token.replace('chile peppers: ', '').strip()
+                    newtokens.append(token + ' chile peppers\n')
+                print(newtokens)
+                for token in newtokens:
+                    output_file.write(token)
+            else if 'pepper:' in line:
+                newtokens = []
+                tokens = line.split(',')
+                for token in tokens:
+                    token = token.replace('pepper: ', '').strip()
+                    newtokens.append(token + ' peppercorns\n')
+                print(newtokens)
+                for token in newtokens:
+                    output_file.write(token)
+            else if 'wine:' in line:
+                newtokens = []
+                tokens = line.split(',')
+                for token in tokens:
+                    token = token.replace('wine: ', '').strip()
+                    newtokens.append(token + ' wine\n')
+                print(newtokens)
+                for token in newtokens:
+                    output_file.write(token)
+            else if 'beans:' in line:
+                newtokens = []
+                tokens = line.split(',')
+                for token in tokens:
+                    token = token.replace('beans: ', '').strip()
+                    newtokens.append(token + ' beans\n')
+                print(newtokens)
+                for token in newtokens:
+                    output_file.write(token)
             else:
                 output_file.write(line)
 
