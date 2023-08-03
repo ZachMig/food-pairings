@@ -75,147 +75,202 @@ def expand_punc(file_path, output_file_path):
     
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
         for line in lines:
-            if 'cheese:' in line:
-                newtokens = []
-                tokens = line.split(',')
-                for token in tokens:
-                    token = token.replace('cheese: ', '').strip()
-                    newtokens.append(token + ' cheese\n')
-                print(newtokens)
-                for token in newtokens:
-                    output_file.write(token)
-            elif 'vinegar:' in line:
-                newtokens = []
-                tokens = line.split(',')
-                for token in tokens:
-                    token = token.replace('vinegar: ', '').strip()
-                    newtokens.append(token + ' vinegar\n')
-                print(newtokens)
-                for token in newtokens:
-                    output_file.write(token)
-            elif 'oil:' in line:
-                newtokens = []
-                tokens = line.split(',')
-                for token in tokens:
-                    token = token.replace('oil: ', '').strip()
-                    newtokens.append(token + ' oil\n')
-                print(newtokens)
-                for token in newtokens:
-                    output_file.write(token)
-            elif 'chile peppers:' in line:
-                newtokens = []
-                tokens = line.split(',')
-                for token in tokens:
-                    token = token.replace('chile peppers: ', '').strip()
-                    newtokens.append(token + ' chile peppers\n')
-                print(newtokens)
-                for token in newtokens:
-                    output_file.write(token)
-            elif 'pepper:' in line:
-                newtokens = []
-                tokens = line.split(',')
-                for token in tokens:
-                    token = token.replace('pepper: ', '').strip()
-                    newtokens.append(token + ' peppercorns\n')
-                print(newtokens)
-                for token in newtokens:
-                    output_file.write(token)
-            elif 'wine:' in line:
-                newtokens = []
-                tokens = line.split(',')
-                for token in tokens:
-                    token = token.replace('wine: ', '').strip()
-                    newtokens.append(token + ' wine\n')
-                print(newtokens)
-                for token in newtokens:
-                    output_file.write(token)
-            elif 'beans:' in line:
-                newtokens = []
-                tokens = line.split(',')
-                for token in tokens:
-                    token = token.replace('beans: ', '').strip()
-                    newtokens.append(token + ' beans\n')
-                print(newtokens)
-                for token in newtokens:
-                    output_file.write(token)
-            elif 'stocks:' in line:
-                newtokens = []
-                tokens = line.split(',')
-                for token in tokens:
-                    token = token.replace('stocks: ', '').strip()
-                    newtokens.append(token + ' stock\n')
-                print(newtokens)
-                for token in newtokens:
-                    output_file.write(token)
-            elif 'sauce:' in line:
-                newtokens = []
-                tokens = line.split(',')
-                for token in tokens:
-                    token = token.replace('sauce: ', '').strip()
-                    newtokens.append(token + ' sauce\n')
-                print(newtokens)
-                for token in newtokens:
-                    output_file.write(token)
+##            if 'cheese:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('cheese: ', '').strip()
+##                    newtokens.append(token + ' cheese\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'vinegar:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('vinegar: ', '').strip()
+##                    newtokens.append(token + ' vinegar\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'oil:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('oil: ', '').strip()
+##                    newtokens.append(token + ' oil\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'chile peppers:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('chile peppers: ', '').strip()
+##                    newtokens.append(token + ' chile peppers\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'pepper:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('pepper: ', '').strip()
+##                    newtokens.append(token + ' peppercorns\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'wine:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('wine: ', '').strip()
+##                    newtokens.append(token + ' wine\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'beans:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('beans: ', '').strip()
+##                    newtokens.append(token + ' beans\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'stocks:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('stocks: ', '').strip()
+##                    newtokens.append(token + ' stock\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'sauce:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('sauce: ', '').strip()
+##                    newtokens.append(token + ' sauce\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            if 'mushrooms:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('mushrooms: ', '').strip()
+##                    newtokens.append(token + ' mushrooms\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'salads:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('salads: ', '').strip()
+##                    newtokens.append(token + ' salads\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'salt:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('salt: ', '').strip()
+##                    newtokens.append(token + ' salt\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'bell peppers:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('bell peppers: ', '').strip()
+##                    newtokens.append(token + ' bell peppers\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'lemon:' in line:
+##                output_file.write('lemons\n')
+##            elif 'lime:' in line:
+##                output_file.write('limes\n')
+##            if 'sugar:' in line:
+##                output_file.write('sugar\n')
+##            elif 'chocolate:' in line:
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.replace('chocolate: ', '').strip()
+##                    newtokens.append(token + ' chocolate\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif ':' in line:
+##                tokens = line.split(':')
+##                output_file.write(tokens[0] + '\n')
+            
             else:
                 output_file.write(line)
 
-    print("Cleaned content has been written to", output_file_path)
+    #print("Cleaned content has been written to", output_file_path)
     
 
 
 
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
-##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
-##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
-##expand_punc(file_path, output_file_path)
-##
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
+file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
+output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
+expand_punc(file_path, output_file_path)
+
 file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
 output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
 expand_punc(file_path, output_file_path)
