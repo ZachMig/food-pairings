@@ -300,75 +300,129 @@ def expand_punc(file_path, output_file_path):
 ##                print(newtokens)
 ##                for token in newtokens:
 ##                    output_file.write(token)
-            if 'peppers, piquillo' in line:
-                output_file.write('piquillo peppers\n')
-            elif 'lemon,' in line:
-                output_file.write('lemons')
-            elif 'lime,' in line:
-                output_file.write('limes')
-            elif 'orange,' in line:
-                output_file.write('oranges')
-
-            else:
-                output_file.write(line)
+##            if 'peppers, piquillo' in line:
+##                output_file.write('piquillo peppers\n')
+##            elif 'lemon,' in line:
+##                output_file.write('lemons\n')
+##            elif 'lime,' in line:
+##                output_file.write('limes\n')
+##            elif 'orange,' in line:
+##                output_file.write('oranges\n')
+##            if 'mushrooms,' in line:
+##                line = line.replace('mushrooms,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' mushrooms\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'wine,' in line:
+##                line = line.replace('wine,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' wine\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'fish sauce,' in line:
+##                output_file.write('fish sauce')
+##            elif 'sauce,' in line:
+##                line = line.replace('sauce,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' sauce\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            if 'sauces,' in line:
+##                line = line.replace('sauces,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' sauces\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            if 'oil,' in line:
+##                line = line.replace('oil,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' oil\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif ',' in line:
+##                tokens = line.split(',')
+##                output_file.write(tokens[0] + '\n')
+##            else:
+            output_file.write(line)
 
     #print("Cleaned content has been written to", output_file_path)
     
 
 
 
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
-expand_punc(file_path, output_file_path)
-
-file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
-output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
-expand_punc(file_path, output_file_path)
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/b_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/c_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/d_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/e_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/f_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/g_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/h_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/j_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/m_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/n_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/q_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/s_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
+##
+##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
+##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/t_cleaned_man.html'
+##expand_punc(file_path, output_file_path)
