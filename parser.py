@@ -210,7 +210,105 @@ def expand_punc(file_path, output_file_path):
 ##            elif ':' in line:
 ##                tokens = line.split(':')
 ##                output_file.write(tokens[0] + '\n')
-            
+##            if 'beans,' in line:
+##                line = line.replace('beans,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' beans\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'salt,' in line:
+##                line = line.replace('salt,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' salt\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'vinegar,' in line:
+##                line = line.replace('vinegar,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' vinegar\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'chocolate,' in line:
+##                line = line.replace('chocolate,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' chocolate\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'stock,' in line:
+##                line = line.replace('stock,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' stock\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'cheese,' in line:
+##                line = line.replace('cheese,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' cheese\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'chile peppers,' in line:
+##                line = line.replace('chile peppers,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' chile peppers\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'pepper,' in line:
+##                line = line.replace('pepper,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' peppercorns\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+##            elif 'bell peppers,' in line:
+##                line = line.replace('bell peppers,', '')
+##                newtokens = []
+##                tokens = line.split(',')
+##                for token in tokens:
+##                    token = token.strip()
+##                    newtokens.append(token + ' bell peppers\n')
+##                print(newtokens)
+##                for token in newtokens:
+##                    output_file.write(token)
+            if 'peppers, piquillo' in line:
+                output_file.write('piquillo peppers\n')
+            elif 'lemon,' in line:
+                output_file.write('lemons')
+            elif 'lime,' in line:
+                output_file.write('limes')
+            elif 'orange,' in line:
+                output_file.write('oranges')
+
             else:
                 output_file.write(line)
 
