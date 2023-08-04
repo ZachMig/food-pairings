@@ -1,80 +1,80 @@
-matches = ['esp.', 'e.g.', '+', 'season:', 'taste:', 'weight:', 'volume:', 'tips:', 'techniques:',
-           'botanical', 'dishes', 'class=\"exts\"', 'class=\"ext', 'class=\"p1\"', 'class=\"ca\"',
-           'affinities', 'class=\"bl\">', 'class=\"sb\">', 'class=\"ca3\">' 'class=\"h4\">',
-           'function:', '<hr />', 'class=\"img\"', 'class=\"ca3\"', '<p>', 'class=\"sbh\"',
-           'class=\"sbtx1\"', 'class=\"bl']
-
-
-
-def remove_extra_spaces(file_path, output_file_path):
-
-    cleaned_lines = []
+##matches = ['esp.', 'e.g.', '+', 'season:', 'taste:', 'weight:', 'volume:', 'tips:', 'techniques:',
+##           'botanical', 'dishes', 'class=\"exts\"', 'class=\"ext', 'class=\"p1\"', 'class=\"ca\"',
+##           'affinities', 'class=\"bl\">', 'class=\"sb\">', 'class=\"ca3\">' 'class=\"h4\">',
+##           'function:', '<hr />', 'class=\"img\"', 'class=\"ca3\"', '<p>', 'class=\"sbh\"',
+##           'class=\"sbtx1\"', 'class=\"bl']
+##
+##
+##
+##def remove_extra_spaces(file_path, output_file_path):
+##
+##    cleaned_lines = []
+##    
+##    with open(file_path, 'r', encoding='utf-8') as file:
+##        lines = file.readlines()
+##        for line in lines:
+##            if line != '\n':
+##                cleaned_lines.append(line)
+##
+##    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+##        for line in cleaned_lines:
+##            #print(line)
+##            line = line.lower()
+##            if any([x in line for x in matches]):
+##                #print(line)
+##                continue
+##            line = line.replace('<strong>', '').replace('</strong>', '')
+##            line = line.replace('1hl', 'lh1')
+##            line = line.replace('l1h', 'lh1').replace('1lh', 'lh1')
+##            line = line.replace('h1l', 'lh1').replace('hl1', 'lh1')
+##
+##            output_file.write(line)
+##
+##
+##
+##matches_two = ['cuisine', 'cuisines']
+##         
+##def remove_some_text(file_path, output_file_path):
+##    
+##    with open(file_path, 'r', encoding='utf-8') as file:
+##        lines = file.readlines()
+##
+##    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+##        for line in lines:
+##            if any([x in line for x in matches_two]):
+##                continue
+##            output_file.write(line)
+##
+##
+##    print("Cleaned content has been written to", output_file_path)
+##
+##
+##
+##
+##def remove_tags(file_path, output_file_path):
+##    
+##    with open(file_path, 'r', encoding='utf-8') as file:
+##        lines = file.readlines()
+##
+##    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+##        for line in lines:
+##            line = line.replace('<p class="lh1">', '*')
+##            line = line.replace('<p class="ul">', '')
+##            line = line.replace('</p>', '')
+##            output_file.write(line)
+##
+##
+##    print("Cleaned content has been written to", output_file_path)
+##
+##
+##def expand_punc(file_path, output_file_path):
+##    with open(file_path, 'r', encoding='utf-8') as file:
+##        lines = file.readlines()
+##    
+##        
     
-    with open(file_path, 'r', encoding='utf-8') as file:
-        lines = file.readlines()
-        for line in lines:
-            if line != '\n':
-                cleaned_lines.append(line)
-
-    with open(output_file_path, 'w', encoding='utf-8') as output_file:
-        for line in cleaned_lines:
-            #print(line)
-            line = line.lower()
-            if any([x in line for x in matches]):
-                #print(line)
-                continue
-            line = line.replace('<strong>', '').replace('</strong>', '')
-            line = line.replace('1hl', 'lh1')
-            line = line.replace('l1h', 'lh1').replace('1lh', 'lh1')
-            line = line.replace('h1l', 'lh1').replace('hl1', 'lh1')
-
-            output_file.write(line)
-
-
-
-matches_two = ['cuisine', 'cuisines']
-         
-def remove_some_text(file_path, output_file_path):
-    
-    with open(file_path, 'r', encoding='utf-8') as file:
-        lines = file.readlines()
-
-    with open(output_file_path, 'w', encoding='utf-8') as output_file:
-        for line in lines:
-            if any([x in line for x in matches_two]):
-                continue
-            output_file.write(line)
-
-
-    print("Cleaned content has been written to", output_file_path)
-
-
-
-
-def remove_tags(file_path, output_file_path):
-    
-    with open(file_path, 'r', encoding='utf-8') as file:
-        lines = file.readlines()
-
-    with open(output_file_path, 'w', encoding='utf-8') as output_file:
-        for line in lines:
-            line = line.replace('<p class="lh1">', '*')
-            line = line.replace('<p class="ul">', '')
-            line = line.replace('</p>', '')
-            output_file.write(line)
-
-
-    print("Cleaned content has been written to", output_file_path)
-
-
-def expand_punc(file_path, output_file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        lines = file.readlines()
-    
-        
-    
-    with open(output_file_path, 'w', encoding='utf-8') as output_file:
-        for line in lines:
+##    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+##        for line in lines:
 ##            if 'cheese:' in line:
 ##                newtokens = []
 ##                tokens = line.split(',')
@@ -364,12 +364,106 @@ def expand_punc(file_path, output_file_path):
 ##                tokens = line.split(',')
 ##                output_file.write(tokens[0] + '\n')
 ##            else:
-            output_file.write(line)
+##            output_file.write(line)
 
     #print("Cleaned content has been written to", output_file_path)
-    
 
 
+
+
+##def combine_all():
+##    all_lines = []
+##    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'm', 'n', 'q', 's', 't']
+##    for letter in letters:
+##        input_path = 'C:/Users/zmigliorini/fb_wdir/manual/{0}_cleaned_man.html'.format(letter)
+##    
+##        with open(input_path, 'r', encoding='utf-8') as file:
+##            lines = file.readlines()
+##            for line in lines:
+##                all_lines.append(line.strip())
+##
+##    with open('C:/Users/zmigliorini/fb_wdir/manual/all_lines.txt', 'w', encoding='utf-8') as file:
+##        for line in all_lines:
+##            file.write(line + '\n')
+
+
+##def create_csv():
+##
+##    all_pairs = {}
+##    key = ''
+##    values = []
+##    
+##    with open('C:/Users/zmigliorini/fb_wdir/manual/all_lines.txt', 'r', encoding='utf-8') as file_in:
+##        lines = file_in.readlines()
+##
+####        keys_compare = []
+####        
+####        for line in lines:
+####            if '*' in line:
+####                keys_compare.append(line.replace('*', '').strip())
+##                
+##        for line in lines:
+##            if '*' in line:
+##                if key in all_pairs:
+##                    print('Unexpected dupe ' + key)
+##                else:
+##                    all_pairs[key] = values
+##                    key = line.replace('*', '').strip()
+##                values = []
+##            else:
+##                if line.strip() not in values:
+##                    values.append(line.strip())
+##
+##
+##    
+##    all_keys = sorted(all_pairs)
+##
+##    with open('C:/Users/zmigliorini/fb_wdir/csv/relationships.csv', 'w', encoding='utf-8') as file_out:
+##        file_out.write('foodA,foodB\n')
+##        for cur_key in all_keys:
+##            cur_values = all_pairs[cur_key]
+##            for val in cur_values:
+##                file_out.write('{0},{1}\n'.format(cur_key.strip(), val.strip()))
+##        
+##
+##
+####    for cur_key in all_keys:
+####        cur_values = all_pairs[cur_key]
+####        with open('C:/Users/zmigliorini/fb_wdir/csv/{0}.csv'.format(cur_key.strip()), 'w', encoding='utf-8') as file_out:
+####            file_out.write('foodA,foodB\n')
+####            for val in cur_values:
+####                file_out.write('{0},{1}\n'.format(cur_key.strip(), val.strip()))
+##        
+####        print('In dict only\n')
+####        for k in list(all_pairs):
+####            if k not in keys_compare:
+####                print(k)
+####        print('\n\n\nNot in dict')
+####        for k in keys_compare:
+####            if k not in list(all_pairs):
+####                print(k)
+##        
+##    #print(sorted(all_pairs))
+##        
+##create_csv()
+
+
+with open('C:/Users/zmigliorini/fb_wdir/csv/relationships.csv', 'r', encoding='utf-8') as file:
+    lines = file.readlines()
+    occurances = set()
+    for line in lines:
+        if 'chestnuts' in line:
+            tup = line.split(',')
+            tup[0] = tup[0].strip()
+            tup[1] = tup[1].strip()
+            if (tup[0], tup[1]) in occurances or (tup[1], tup[0]) in occurances:
+                continue
+            else:
+                occurances.add((tup[0], tup[1]))
+    for occ in occurances:
+        print(occ)
+        print('\n')
+    print(len(occurances))
 
 ##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
 ##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
