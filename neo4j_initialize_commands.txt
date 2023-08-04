@@ -18,3 +18,16 @@ CALL {
 WHERE a.name = csvLine.foodA AND b.name = csvLine.foodB
 MERGE (a)-[:PAIRS_WITH]->(b)
 }
+
+_______________
+
+//Create all foods
+:auto LOAD CSV WITH HEADERS FROM "file:///test/relationships.csv" AS csvLine
+
+CALL {
+ WITH csvLine
+ MERGE (:Food {name:csvLine.foodA})
+ MERGE (:Food {name:csvLine.foodB})
+}
+
+//Create all relationships
