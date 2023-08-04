@@ -456,14 +456,15 @@ with open('C:/Users/zmigliorini/fb_wdir/csv/relationships.csv', 'r', encoding='u
             tup = line.split(',')
             tup[0] = tup[0].strip()
             tup[1] = tup[1].strip()
-            if (tup[0], tup[1]) in occurances or (tup[1], tup[0]) in occurances:
-                continue
+            if tup[0] == 'chestnuts':
+                occurances.add(tup[1])
             else:
-                occurances.add((tup[0], tup[1]))
+                occurances.add(tup[0])
     for occ in occurances:
         print(occ)
-        print('\n')
     print(len(occurances))
+
+    
 
 ##file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
 ##output_file_path = 'C:/Users/zmigliorini/fb_wdir/manual/a_cleaned_man.html'
