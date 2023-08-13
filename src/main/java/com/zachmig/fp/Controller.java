@@ -21,25 +21,31 @@ public class Controller {
 	@Autowired
 	private FoodRepository foodRepo;
 	
-	
-	/**
-	 * 
-	 * Method to process HTTP GET requests that end in /country?name=COUNTRYNAME
-	 * 
-	 * @param name country name as HTTP GET parameter
-	 * 	When provided by client, whitespace in between words should be replaced by underlines 
-	 * 	and this method will expect and handle underlines.
-	 * @return a Country object for JSON serialization, or NULL if there is 
-	 * 	a problem creating the object or locating the record in DB.
-	 */
 	@GetMapping(
 			value = "/food"
 	)
 	@CrossOrigin
-	public List<String> getFoods(@RequestParam(value="name") String name) { 
+	public List<String> getNeighborsByName(@RequestParam(value="name") String name) { 
 		
 		return foodRepo.findByName(name.replace("_", " ").trim());
 				
 	}
 	
+	@GetMapping(
+			value = "/foods"
+	)
+	@CrossOrigin
+	public List<String> getAllFoods() { 
+		return foodRepo.findAllFoods();
+	}
+	
+	@GetMapping(
+			value = "/health"
+	)
+	@CrossOrigin
+	public String getHealthy() { 
+		
+		return "Healthy";
+				
+	}
 }
